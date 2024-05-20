@@ -126,8 +126,8 @@ ReadList ↚ |0 (
 AllTrue! ↚^ $"/×[⊃(_)]" /$"_|_"
 OneTrue! ↚^ $"/↥[⊃(_)]" /$"_|_"
 
-# is the argument either an empty list, a list of strings
-# or a boxed list of strings
+# is the argument either an empty array, a array of strings
+# or a boxed array of strings
 # bool ? arg
 IsListOfStrings ↚ |1 OneTrue!(
     ≍[0] △
@@ -211,8 +211,8 @@ EvalString ← |2 (
 )
 
 # Calls the function named `FunctionName` in the specfied Environment,
-# passing it the arguments in `FunctionArgs` (please use a boxed list).
-# If `ArgNames` is not an empty list, the FunctionArgs are named before being
+# passing it the arguments in `FunctionArgs` (please use a boxed array).
+# If `ArgNames` is not an empty array, the FunctionArgs are named before being
 # passed to the function. Please note the `Pair` function (and its inverse) to convert between
 # `{Name} {Args}` and `{{Name Arg}}` styles. Also note the `DefaultArgument` function.
 # Output ? EnvTag FunctionName FunctionArgs ArgNames

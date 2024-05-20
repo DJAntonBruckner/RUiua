@@ -23,7 +23,7 @@ SimplePlot ← |2.0 (
 # Plots using the values provided in `PlotArgs`.
 # Use the format `{{Name Data}}` to provide them.
 # The args are passed directly to the R function
-# `Plot`
+# `plot`. See the documentation of the R function `plot`.
 # ? PlotArgs
 Plot ← |1.0 (
     ◌R~CallFunction Env "simple_plot" : °R~Pair
