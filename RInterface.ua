@@ -46,11 +46,19 @@ DataTypes ↚ ReadInitList
 # ------PRIVATE------
 
 # creates a csv of complex numbers
-ComplexCsv ↚ (
+ComplexCsv ↚ |1 setinv(
     ⍤"Error: must be array of numbers" /↥ =[1 2] type .
     ⍤"Error: dim must be 2 or 1" ≤ 2 ⧻△ .
     ∵(□$"__i"∩(⟨$"_"|$"+_"|$"+_"⟩+1±.):°ℂ)
     /$"_\n_"≡(□/$"_,_")
+)(
+    ⊜□≠,"\n"
+    ≡(
+        ⊜□≠,","°□
+        ≡(
+            ℂ:⍣(∩⋕°$"_+_i"|¯∩⋕°$"_-_i")
+        )
+    )
 )
 
 ProcessArgN ↚ |1 (
