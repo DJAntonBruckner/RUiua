@@ -2,8 +2,13 @@
 
 # ------INIT------
 
+⊂⊂ WorkingDir ThisFileDir "/RInterface.r"
+
+⍥(&exit 1 &p "File not Found: RInterface.r") ¬&fe .
+
+&runs {"Rscript" "--vanilla" ∘}
 # handle to the R child process
-RProc ↚ &runs {"Rscript" "--vanilla" "./RInterface.r"}
+RProc ↚
 
 # get the port number from the address
 GetPort ↚ |1 °□⊢⇌ ⊜□ ≠":" .

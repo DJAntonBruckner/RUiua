@@ -1,13 +1,12 @@
 # RUiua
-Interact with and run R code from Uiua. Also includes Plots.
+Interact with and run R code from Uiua. See [RUiuaPlot](https://github.com/DJAntonBruckner/RUiuaPlot).
 
 ## Requirements 
 R and Rscript in your path and the latest `--main` version of Uiua. Then copy the .r and .ua files to your working directory. The "git module" functionality of Uiua is not supported. Only tested on Linux.
 
 ## Usage
-Import RInterface.ua and/or RPlot.ua as a Module.
-See example.ua for an example of how to use the RPlot module.
-See RPlot for an example of how to use the RInterface module.
+Import RUiua as a module using `R ~ "git: github.com/DJAntonBruckner/RUiua"`.
+See [RUiuaPlot](https://github.com/DJAntonBruckner/RUiuaPlot) for an example of how to use RUiua module.
 
 ### RInterface
 Allows interaction with R and executing R code. Also handles sending data to and retrieving data from R.
