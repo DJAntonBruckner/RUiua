@@ -2,9 +2,9 @@
 
 # ------INIT------
 
-⊂⊂⊂ WorkingDir "/" ThisFileDir "/RInterface.r"
+⊂⊂⊂⊂ WorkingDir Sep ThisFileDir Sep "RInterface.r"
 
-⍥(&exit 1 &p "File not Found: RInterface.r") ¬&fe .
+⍥(&exit 1 &p $"File not Found: _" .) ¬&fe .
 
 &runs {"Rscript" "--vanilla" ∘}
 # handle to the R child process
