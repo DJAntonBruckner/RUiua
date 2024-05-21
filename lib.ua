@@ -2,7 +2,7 @@
 
 # ------INIT------
 
-⊂⊂ WorkingDir ThisFileDir "/RInterface.r"
+⊂⊂⊂ WorkingDir "/" ThisFileDir "/RInterface.r"
 
 ⍥(&exit 1 &p "File not Found: RInterface.r") ¬&fe .
 
