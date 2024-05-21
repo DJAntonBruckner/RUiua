@@ -21,7 +21,7 @@ ToBytes ↚ |1 (
 )
 
 # create int32 from bytes (hopefully)
-FromBytes ↚ |1 ⍥(-ⁿ32 2)≥ ⁿ31 2 . ⍜⋯♭
+FromBytes ↚ |1 ⍥(-ⁿ32 2)≥ ⁿ31 2 . ⍜⋯(♭≡(⬚0↯1_8))
 
 # read line from R
 ReadLine ↚ |0 (
